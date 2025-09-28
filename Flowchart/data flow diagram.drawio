@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="2BY_S7NzNjJH-COv9lId">
+    <mxGraphModel dx="786" dy="463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nOc10zpCf364JslHW6hg-1" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Files.svg;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="64" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nOc10zpCf364JslHW6hg-23" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="180" y="73" width="130" height="647" as="geometry" />
+        </mxCell>
+        <mxCell id="nOc10zpCf364JslHW6hg-21" value="" style="group;strokeColor=default;container=0;perimeterSpacing=5;strokeWidth=1;fillColor=none;metaEdit=1;labelPadding=10;" vertex="1" connectable="0" parent="nOc10zpCf364JslHW6hg-23">
+          <mxGeometry width="130" height="647" as="geometry" />
+        </mxCell>
+        <mxCell id="nOc10zpCf364JslHW6hg-2" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space-collapse: preserve;&quot;&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;stgdb&lt;/span&gt;&lt;/div&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/database.svg;strokeColor=default;" vertex="1" parent="nOc10zpCf364JslHW6hg-23">
+          <mxGeometry x="28" width="77.03" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="nOc10zpCf364JslHW6hg-11" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;stg_accounts&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=default;strokeWidth=2;glass=0;shadow=1;" vertex="1" parent="nOc10zpCf364JslHW6hg-23">
+          <mxGeometry y="117" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nOc10zpCf364JslHW6hg-12" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;stg_transactions&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=default;strokeWidth=2;glass=0;shadow=1;" vertex="1" parent="nOc10zpCf364JslHW6hg-23">
+          <mxGeometry y="187" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nOc10zpCf364JslHW6hg-13" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;stg_creditcard&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=default;strokeWidth=2;glass=0;shadow=1;" vertex="1" parent="nOc10zpCf364JslHW6hg-23">
+          <mxGeometry y="327" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nOc10zpCf364JslHW6hg-14" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;stg_payments&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=default;strokeWidth=2;glass=0;shadow=1;" vertex="1" parent="nOc10zpCf364JslHW6hg-23">
+          <mxGeometry y="257" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nOc10zpCf364JslHW6hg-15" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;stg_loans&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=default;strokeWidth=2;glass=0;shadow=1;" vertex="1" parent="nOc10zpCf364JslHW6hg-23">
+          <mxGeometry y="397" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nOc10zpCf364JslHW6hg-16" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;stg_cust_profile&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=default;strokeWidth=2;glass=0;shadow=1;" vertex="1" parent="nOc10zpCf364JslHW6hg-23">
+          <mxGeometry y="467" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nOc10zpCf364JslHW6hg-18" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;stg_branches&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=default;strokeWidth=2;glass=0;shadow=1;" vertex="1" parent="nOc10zpCf364JslHW6hg-23">
+          <mxGeometry y="537" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nOc10zpCf364JslHW6hg-19" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;stg_employees&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=default;strokeWidth=2;glass=0;shadow=1;" vertex="1" parent="nOc10zpCf364JslHW6hg-23">
+          <mxGeometry y="607" width="130" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
