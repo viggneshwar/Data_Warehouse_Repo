@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="LyRKcLQ79gv33OkIYmN8">
+    <mxGraphModel dx="786" dy="463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9PZAr2gUqied0R63RHXL-1" value="&lt;font style=&quot;color: light-dark(rgb(255, 255, 255), rgb(237, 237, 237));&quot;&gt;Staging Layer&lt;/font&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#10739E;strokeColor=none;fontSize=17;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="70" y="120" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9PZAr2gUqied0R63RHXL-2" target="9PZAr2gUqied0R63RHXL-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-2" value="- Landing zone for raw data&lt;div&gt;- Stores data exactly as received&lt;/div&gt;&lt;div&gt;- Enables auditing &amp;amp; reprocessing&lt;/div&gt;&lt;div&gt;- Minimal transformation&lt;/div&gt;" style="shape=rect;fillColor=#B1DDF0;strokeColor=none;fontSize=12;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="70" y="160" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-3" value="ODS Layer" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#10739E;strokeColor=none;fontSize=17;fontStyle=1;align=center;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="310" y="120" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9PZAr2gUqied0R63RHXL-4" target="9PZAr2gUqied0R63RHXL-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-4" value="- Cleaned &amp;amp; standardized data&lt;div&gt;- Removes duplicates &amp;amp; fixes formats&lt;/div&gt;&lt;div&gt;- Standardizes units &amp;amp; codes&lt;/div&gt;&lt;div&gt;- Integrates multiple sources&lt;/div&gt;" style="shape=rect;fillColor=#B1DDF0;strokeColor=none;fontSize=12;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="310" y="160" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-5" value="EDW Layer" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#10739E;strokeColor=none;fontSize=17;fontStyle=1;align=center;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="556" y="120" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9PZAr2gUqied0R63RHXL-6" target="9PZAr2gUqied0R63RHXL-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-6" value="- Central historical repository&lt;div&gt;- Stores Dimensions scd1 or scd2 &amp;amp; Facts&lt;/div&gt;&lt;div&gt;- Applies business rules &amp;amp; derived metrics&lt;/div&gt;&lt;div&gt;- Single source of truth&lt;/div&gt;" style="shape=rect;fillColor=#B1DDF0;strokeColor=none;fontSize=12;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="556" y="160" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-7" value="Data Marts" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#10739E;strokeColor=none;fontSize=17;fontStyle=1;align=center;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="790" y="120" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9PZAr2gUqied0R63RHXL-8" target="9PZAr2gUqied0R63RHXL-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-8" value="- Subject-specific datasets&lt;div&gt;- Aggregations &amp;amp; KPIs for departments&lt;/div&gt;&lt;div&gt;- Improves performance&lt;/div&gt;&lt;div&gt;- Department-focused views&lt;/div&gt;" style="shape=rect;fillColor=#B1DDF0;strokeColor=none;fontSize=12;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="790" y="160" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-9" value="Reporting Layer" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#10739E;strokeColor=none;fontSize=17;fontStyle=1;align=center;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="120" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9PZAr2gUqied0R63RHXL-10" value="- Presentation-ready data&lt;div&gt;- Pre-aggregated &amp;amp; formatted&lt;/div&gt;&lt;div&gt;- Supports dashboards &amp;amp; BI tools&lt;/div&gt;&lt;div&gt;- Applies security filters&lt;/div&gt;" style="shape=rect;fillColor=#B1DDF0;strokeColor=none;fontSize=12;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="160" width="190" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
