@@ -9,7 +9,7 @@ host = '34.63.107.222'
 db = 'stgdb'
 
 engine = create_engine(f"mysql+pymysql://{username}:{password}@{host}:3306/{db}")
-folder="C:\\dataset\\"
+folder="D:\\Learn\\Inceptez Data Engineering\\DW Project\\dataset\\"
 files = {
     "stg_accounts": folder+"accounts.csv",
     "stg_transactions": folder+"transactions.csv",
