@@ -32,11 +32,11 @@ files = {
 #first iteration of for loop will assign table='stg_transactions' , file=folder+'transactions.csv'
 for table, file in files.items():
     if os.path.exists(ds_folder+file):
-        print(f"File {file} exists, proceeding to load data into table {table}.")
+        #print(f"File {file} exists, proceeding to load data into table {table}.")
         #read files from iteration and convert it into dataframe/memorytable
         df = pd.read_csv(ds_folder+file)
         #load the data from df/memorytable to actual db table
         df.to_sql(table, con=engine, index=False, if_exists="replace")
-        print(f"Rows loaded in the table {table}")
+        print(f"{len(df):,} Rows loaded in the table {table}")
     else:
-        print(f"File {file} does not exist, skipping loading for table {table}.")
+        print(f"File {file} does not exist, skipping table {table}.")

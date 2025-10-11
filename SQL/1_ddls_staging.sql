@@ -1,6 +1,6 @@
 --weekend 47 query
 create database stgdb;
-CREATE TABLE stgdb.stg_accounts (
+CREATE TABLE  if not exists stgdb.stg_accounts (
     AccountID VARCHAR(50),
     AccountType VARCHAR(50),
     Balance DECIMAL(18,2),
@@ -12,7 +12,7 @@ CREATE TABLE stgdb.stg_accounts (
     ODLimit DECIMAL(18,2)
 );
 
-CREATE TABLE stgdb.stg_transactions (
+CREATE TABLE  if not exists stgdb.stg_transactions (
     AccountID VARCHAR(50),
     Amount DECIMAL(18,2),
     Currency VARCHAR(10),
@@ -25,7 +25,7 @@ CREATE TABLE stgdb.stg_transactions (
     TransactionID VARCHAR(50),
     TransactionType VARCHAR(50));
 
-CREATE TABLE stgdb.stg_payments (
+CREATE TABLE  if not exists stgdb.stg_payments (
     Amount DECIMAL(18,2),
     AuditTrial TEXT,
     ClearingSystem VARCHAR(50),
@@ -42,7 +42,7 @@ CREATE TABLE stgdb.stg_payments (
     ToAccountID VARCHAR(50)	
 );
 
-CREATE TABLE stgdb.stg_creditcard (
+CREATE TABLE  if not exists stgdb.stg_creditcard (
     Balance DECIMAL(18,2),
     BillCycle VARCHAR(20),
     CardID VARCHAR(50),
@@ -56,7 +56,7 @@ CREATE TABLE stgdb.stg_creditcard (
     Status VARCHAR(20)
 );
 
-CREATE TABLE stgdb.stg_loans (
+CREATE TABLE  if not exists stgdb.stg_loans (
     Amount DECIMAL(18,2),
     Collateral VARCHAR(100),
     CustomerID VARCHAR(50),
@@ -69,7 +69,7 @@ CREATE TABLE stgdb.stg_loans (
     Status VARCHAR(20)
 );
 
-CREATE TABLE stgdb.stg_cust_profile (
+CREATE TABLE  if not exists stgdb.stg_cust_profile (
     Address TEXT,
     BranchID VARCHAR(50),
     CustomerID VARCHAR(50),
@@ -81,7 +81,7 @@ CREATE TABLE stgdb.stg_cust_profile (
 );
 
 
-CREATE TABLE stgdb.stg_branches (
+CREATE TABLE  if not exists stgdb.stg_branches (
     Address TEXT,
     BranchID VARCHAR(50),
     BranchName VARCHAR(100),
@@ -89,7 +89,7 @@ CREATE TABLE stgdb.stg_branches (
     State VARCHAR(100),
     Zipcode VARCHAR(20));
 
-CREATE TABLE stgdb.stg_employees (
+CREATE TABLE  if not exists stgdb.stg_employees (
     BranchID VARCHAR(50),
     EmployeeID VARCHAR(50),
     FirstName VARCHAR(100),
@@ -100,7 +100,7 @@ CREATE TABLE stgdb.stg_employees (
 	
 create database odsdb;
 
-CREATE TABLE odsdb.ods_accounts (
+CREATE TABLE  if not exists odsdb.ods_accounts (
     AccountID VARCHAR(50),
     AccountType VARCHAR(50),
     Balance DECIMAL(18,2),
@@ -114,7 +114,7 @@ CREATE TABLE odsdb.ods_accounts (
     load_ts TIMESTAMP
 );
 
-CREATE TABLE odsdb.ods_transactions (
+CREATE TABLE  if not exists odsdb.ods_transactions (
     AccountID VARCHAR(50),
     Amount DECIMAL(18,2),
     Currency VARCHAR(10),
@@ -130,7 +130,7 @@ CREATE TABLE odsdb.ods_transactions (
     load_ts TIMESTAMP
 );
 
-CREATE TABLE odsdb.ods_payments (
+CREATE TABLE  if not exists odsdb.ods_payments (
     Amount DECIMAL(18,2),
     AuditTrial TEXT,
     ClearingSystem VARCHAR(50),
@@ -149,7 +149,7 @@ CREATE TABLE odsdb.ods_payments (
     load_ts TIMESTAMP
 );
 
-CREATE TABLE odsdb.ods_creditcard (
+CREATE TABLE  if not exists odsdb.ods_creditcard (
     Balance DECIMAL(18,2),
     BillCycle VARCHAR(20),
     CardID VARCHAR(50),
@@ -165,7 +165,7 @@ CREATE TABLE odsdb.ods_creditcard (
     load_ts TIMESTAMP
 );
 
-CREATE TABLE odsdb.ods_loans (
+CREATE TABLE  if not exists odsdb.ods_loans (
     Amount DECIMAL(18,2),
     Collateral VARCHAR(100),
     CustomerID VARCHAR(50),
@@ -180,7 +180,7 @@ CREATE TABLE odsdb.ods_loans (
     load_ts TIMESTAMP
 );
 
-CREATE TABLE odsdb.ods_cust_profile (
+CREATE TABLE  if not exists odsdb.ods_cust_profile (
     Address TEXT,
     BranchID VARCHAR(50),
     CustomerID VARCHAR(50),
@@ -193,7 +193,7 @@ CREATE TABLE odsdb.ods_cust_profile (
     load_ts TIMESTAMP
 );
 
-CREATE TABLE odsdb.ods_branches (
+CREATE TABLE  if not exists odsdb.ods_branches (
     Address TEXT,
     BranchID VARCHAR(50),
     BranchName VARCHAR(100),
@@ -204,7 +204,7 @@ CREATE TABLE odsdb.ods_branches (
     load_ts TIMESTAMP
 );
 
-CREATE TABLE odsdb.ods_employees (
+CREATE TABLE  if not exists odsdb.ods_employees (
     BranchID VARCHAR(50),
     EmployeeID VARCHAR(50),
     FirstName VARCHAR(100),
@@ -218,7 +218,7 @@ CREATE TABLE odsdb.ods_employees (
 
 
 create database edwdb;
-CREATE TABLE edwdb.dim_customers (
+CREATE TABLE  if not exists edwdb.dim_customers (
     CustomerID VARCHAR(50),
     FirstName VARCHAR(100),
     LastName VARCHAR(100),
@@ -232,7 +232,7 @@ CREATE TABLE edwdb.dim_customers (
     effective_date DATE
 );
 
-CREATE TABLE edwdb.dim_branches (
+CREATE TABLE  if not exists edwdb.dim_branches (
     Address TEXT,
     BranchID VARCHAR(50),
     BranchName VARCHAR(100),
@@ -246,7 +246,7 @@ CREATE TABLE edwdb.dim_branches (
     is_current TINYINT
 );
 
-CREATE TABLE edwdb.dim_employees (
+CREATE TABLE  if not exists edwdb.dim_employees (
     BranchID VARCHAR(50),
     EmployeeID VARCHAR(50),
     FirstName VARCHAR(100),
@@ -258,7 +258,7 @@ CREATE TABLE edwdb.dim_employees (
     load_ts TIMESTAMP
 );
 
-CREATE TABLE edwdb.dim_loans (
+CREATE TABLE  if not exists edwdb.dim_loans (
     Amount DECIMAL(18,2),
     Collateral VARCHAR(100),
     CustomerID VARCHAR(50),
@@ -273,7 +273,7 @@ CREATE TABLE edwdb.dim_loans (
     load_ts TIMESTAMP
 );
 
-CREATE TABLE edwdb.fact_loans (
+CREATE TABLE  if not exists edwdb.fact_loans (
     LoanID bigint NOT NULL,
     CustomerID INT NOT NULL,
     BranchID INT NOT NULL,
@@ -291,7 +291,7 @@ CREATE TABLE edwdb.fact_loans (
     load_ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 
 create database trans_mart;
-CREATE TABLE trans_mart.fact_transactions (
+CREATE TABLE  if not exists trans_mart.fact_transactions (
     AccountID VARCHAR(50),
     Amount DECIMAL(18,2),
     Currency VARCHAR(10),
@@ -309,7 +309,7 @@ CREATE TABLE trans_mart.fact_transactions (
 );
 
 create database payment_mart;
-CREATE TABLE payment_mart.fact_payments (
+CREATE TABLE  if not exists payment_mart.fact_payments (
     Amount DECIMAL(18,2),
     AuditTrial TEXT,
     ClearingSystem VARCHAR(50),
@@ -330,7 +330,7 @@ CREATE TABLE payment_mart.fact_payments (
 );
 
 create database cc_mart;
-CREATE TABLE cc_mart.fact_creditcard (
+CREATE TABLE  if not exists cc_mart.fact_creditcard (
     fact_creditcard_id BIGINT AUTO_INCREMENT PRIMARY KEY,
     customerid INT,
     loanid BIGINT,
