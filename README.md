@@ -26,9 +26,15 @@ This repo is designed to:
 
 📂 **Structure**
 Data_Warehouse_Repo/
+
 │── Python/        # Loader & ETL scripts
+
 │── SQL/           # Database scripts
+
 │── Flowchart/     # Architecture diagrams
+
 │── dataset/       # Sample datasets
+
 │── stgdb.drawio   # Staging DB schema
+
 │── .github/       # Workflow configs
